@@ -1755,7 +1755,7 @@ public class Stargate {
                 getGateStructureBlocks().add(getGateRedstoneDialActivationBlock().getLocation());
                 getGateRedstoneDialActivationBlock().setTypeId(55);
             } else {
-                if (getGateRedstoneGateActivatedBlock().getTypeId() == 55) {
+                if (true/*getGateRedstoneGateActivatedBlock().getTypeId() == 55*/) {
                     getGateStructureBlocks().remove(getGateRedstoneDialActivationBlock().getLocation());
                     getGateRedstoneDialActivationBlock().setTypeId(0);
                 }
