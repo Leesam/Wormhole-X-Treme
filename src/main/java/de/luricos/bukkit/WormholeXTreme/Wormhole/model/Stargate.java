@@ -473,7 +473,7 @@ public class Stargate {
             WormholeXTreme.getScheduler().scheduleSyncDelayedTask(WormholeXTreme.getThisPlugin(), new StargateUpdateRunnable(this.getGateTarget(), ActionToTake.ANIMATE_WOOSH));
         } else {
             WXTLogger.prettyLog(Level.FINER, false, "Chevrons where not locked on both sides. Restarting thread.");
-            setGateEstablishWormholeTaskId(WormholeXTreme.getScheduler().scheduleSyncDelayedTask(WormholeXTreme.getThisPlugin(), new StargateUpdateRunnable(this, ActionToTake.ESTABLISH_WORMHOLE)));
+            setGateEstablishWormholeTaskId(WormholeXTreme.getScheduler().scheduleSyncDelayedTask(WormholeXTreme.getThisPlugin(), new StargateUpdateRunnable(this, ActionToTake.ESTABLISH_WORMHOLE), 10));
         }
     }
 
