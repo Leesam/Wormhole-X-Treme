@@ -63,7 +63,8 @@ public class WXTLogger {
             prettyLogLine += prettyVersion;
         }
         
-        logger.log(logLevel, prettyLogLine + " " + message);
+/*        logger.log(logLevel, prettyLogLine + " " + message);      This wasn't working*/
+        Bukkit.getConsoleSender().sendMessage(message); /* This seems to work better*/
     }
     
     public static Level getLogLevel() {
